@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal page of Danyang Zhang — Engineering Mechanics, AI4S, photography, music, life and a little bit of everything." />
+  <meta name="theme-color" content="#121212" />
+  <title>Danyang Zhang · Personal Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" alt="Digital avatar of Danyang Zhang" width="120" />
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Danyang Zhang">Danyang Zhang</h1>
+          <p class="title">Engineering Mechanics · AI4S</p>
+        </div>
+        <button class="info-more-btn" data-sidebar-btn aria-expanded="false">
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info-more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:1968764174@qq.com" class="contact-link">1968764174@qq.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+8613673387723" class="contact-link">+86 136 7338 7723</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Cohort</p>
+              <p class="contact-link">2024</p>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Nanjing, Jiangsu, PRC</address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar" aria-label="Primary navigation">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>The Self</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Dating</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header><h2 class="h2 article-title">About me</h2></header>
+        <section class="about-text">
+          <p>
+            I am an INFP — a little butterfly, if you like that metaphor. I tend to be quiet when I first meet people,
+            but I move through everyday life with a lot of affection, curiosity, and a genuine interest in other people.
+          </p>
+          <p>
+            I like trying things that are new to me. Lately that has meant exploring AI, learning how to build useful or simply fun things with it,
+            and studying scientific machine learning — especially neural operators such as DeepONet. Outside academics, my interests spread in many directions:
+            books, music, photography, sports, cycling, running, movies, and whatever else happens to catch my attention.
+          </p>
+          <p>
+            For work, I hope to keep things simple in the best sense of the word: do research that creates real value, make things that people can actually benefit from,
+            and stay close to the human side of whatever I build. Titles matter less to me than becoming someone who cares about people broadly and sincerely.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Vibe Coding</h4>
+                <p class="service-item-text">Building playful things with AI — from a cloud-based digital wardrobe to small open-source skills and tools.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="flask-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI for Science</h4>
+                <p class="service-item-text">Working with DeepONet, PINNs and numerical simulation, hoping to connect mechanics with AI in ways that genuinely improve how we model physical systems.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="people-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Student Activities</h4>
+                <p class="service-item-text">Helping with sports, social-practice and alumni activities — mostly trying to make events feel useful, memorable and a little more fun.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="camera-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">A Bit of Everything</h4>
+                <p class="service-item-text">Photography, music, reading, basketball, cycling and running. I am not an expert at most of them — I just genuinely enjoy doing many things.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mini-strip">
+          <div class="mini-card"><span>INFP</span><small>quiet at first, warm later</small></div>
+          <div class="mini-card"><span>SEU</span><small>Engineering Mechanics</small></div>
+          <div class="mini-card"><span>Zhengzhou</span><small>home</small></div>
+          <div class="mini-card"><span>Nanjing</span><small>where I am now</small></div>
+        </section>
+      </article>
+
+      <article class="resume" data-page="resume">
+        <header><h2 class="h2 article-title">Resume</h2></header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Southeast University (SEU)</h4>
+              <span>B.Eng. in Engineering Mechanics · 2024 — Present</span>
+              <p class="timeline-text">
+                Studying Engineering Mechanics with particular interests in computational mechanics, fluid dynamics and scientific machine learning.
+                I enjoy problems that sit somewhere between mathematics, physics and computation — especially when code can turn an idea into something that actually works.
+              </p>
+              <p class="timeline-text">
+                Currently ranked <strong>1st in my major</strong>, though I probably enjoy exploring interesting problems more than collecting numbers on a transcript.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="git-branch-outline"></ion-icon></div>
+            <h3 class="h3">Projects & Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Scientific Machine Learning & Computational Mechanics</h4>
+              <span>2026 — Present</span>
+              <p class="timeline-text">Exploring how machine learning can work together with physical models, especially in mechanics and fluid dynamics. Recently, much of my time has gone into neural operators, numerical simulations, and understanding what information a model actually learns from physical data.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Physics-Informed Neural Networks</h4>
+              <span>Feb 2026 — May 2026</span>
+              <p class="timeline-text">Built a Physics-Informed Neural Network (PINN) for a damped oscillator, using it for both response prediction and parameter identification. This was one of the projects that made me genuinely interested in the intersection of physics, mathematics and AI.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Dynamics, Vibration & System Identification</h4>
+              <span>2025 — Present</span>
+              <p class="timeline-text">Worked on several small projects involving structural dynamics, vibration, modal identification and flutter-related modeling. I especially enjoy the part where equations become simulations — and simulations slowly become an explanation of what is physically happening.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="proud-section">
+          <h3 class="h3">A Few Things I'm Proud Of</h3>
+          <ul class="proud-list">
+            <li><span>🥇</span> National First Prize, Chinese Mathematics Competition for College Students</li>
+            <li><span>🎓</span> Top-ranked student in Engineering Mechanics at SEU</li>
+            <li><span>🧮</span> A suspiciously strong preference for mathematics-heavy courses</li>
+            <li><span>💻</span> Most comfortable with Python, PyTorch, NumPy, SciPy and Matplotlib</li>
+            <li><span>🔬</span> Interested in computational mechanics, fluid dynamics, AI for Science and numerical modeling</li>
+          </ul>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Vibe Coding</h5><data value="70">70%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:70%"></div></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Design</h5><data value="60">60%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:60%"></div></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Love</h5><data value="90">90%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%"></div></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Talker</h5><data value="30">30%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:30%"></div></div></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="the-self" data-page="the self">
+        <header><h2 class="h2 article-title">The Self</h2></header>
+        <section class="about-text self-intro">
+          <p>
+            I spend quite a lot of time exploring the self — through reflection, poetry, and the quiet agreements we make with ourselves and with other people.
+            I love Zhengzhou and the idea of an ordinary, steady life, but I am not passive about it. I still want to work hard for the things that matter to me.
+          </p>
+        </section>
+
+        <section class="facts-grid">
+          <div class="fact-card"><ion-icon name="nutrition-outline"></ion-icon><div><h4>Small joys</h4><p>Bananas and mangoes. Simple, reliable happiness.</p></div></div>
+          <div class="fact-card"><ion-icon name="sunny-outline"></ion-icon><div><h4>A perfect day</h4><p>A day that is genuinely free — no rush, no forced schedule, just choosing what feels worth doing.</p></div></div>
+          <div class="fact-card"><ion-icon name="airplane-outline"></ion-icon><div><h4>Somewhere I want to go</h4><p>Baoshan, Yunnan. Mountains, roads and enough time to look around slowly.</p></div></div>
+          <div class="fact-card"><ion-icon name="musical-notes-outline"></ion-icon><div><h4>On repeat lately</h4><p>IU — plus whatever song makes a drive feel like a tiny private concert.</p></div></div>
+        </section>
+
+        <section class="gallery-section">
+          <h3 class="h3">Frames I've Kept</h3>
+          <p class="section-note">Photography is one of the ways I notice the world. The previews stay square; click any frame to see the full image.</p>
+          <div class="gallery-grid">
+            <button class="gallery-card" data-lightbox="./assets/images/gallery/zhengzhou-sunset.webp" data-caption="Zhengzhou · sunset near Financial Island">
+              <img src="./assets/images/gallery/thumbs/zhengzhou-sunset.webp" alt="Warm sunset over an urban street in Zhengzhou" />
+              <span>Zhengzhou · Sunset</span>
+            </button>
+            <button class="gallery-card" data-lightbox="./assets/images/gallery/roadside-repair.webp" data-caption="Anhui · one of those trips where fixing something becomes part of the memory">
+              <img src="./assets/images/gallery/thumbs/roadside-repair.webp" alt="A roadside repair moment during a trip" />
+              <span>On the Road</span>
+            </button>
+            <button class="gallery-card" data-lightbox="./assets/images/gallery/nanjing-spring.webp" data-caption="Nanjing · spring on Hushan Road">
+              <img src="./assets/images/gallery/thumbs/nanjing-spring.webp" alt="Pink spring blossoms along a road in Nanjing" />
+              <span>Nanjing · Spring</span>
+            </button>
+            <button class="gallery-card" data-lightbox="./assets/images/gallery/tree-bench.webp" data-caption="Shenyang · a quiet bench under the trees">
+              <img src="./assets/images/gallery/thumbs/tree-bench.webp" alt="A person sitting on a bench beneath green trees" />
+              <span>Under the Trees</span>
+            </button>
+            <button class="gallery-card" data-lightbox="./assets/images/gallery/butterfly-mantis.webp" data-caption="Langya Mountain · a butterfly, a flower, and a mantis waiting behind">
+              <img src="./assets/images/gallery/thumbs/butterfly-mantis.webp" alt="Butterfly and mantis near a red flower" />
+              <span>Butterfly & Mantis</span>
+            </button>
+            <button class="gallery-card" data-lightbox="./assets/images/gallery/minecraft-sunset.webp" data-caption="A digital sunset still counts">
+              <img src="./assets/images/gallery/thumbs/minecraft-sunset.webp" alt="Minecraft landscape at sunset" />
+              <span>A Digital Sunset</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="music-section">
+          <h3 class="h3">Music I Return To</h3>
+          <p class="section-note">Mostly Western pop and hip-hop, with Taylor Swift and Eminem always somewhere nearby; lately IU and some K-pop have been joining the rotation too.</p>
+          <div class="album-grid">
+            <button class="album-card" data-lightbox="./assets/images/music/album-01.webp" data-caption="A favorite cover from the current rotation"><img src="./assets/images/music/album-01.webp" alt="Favorite music cover" /></button>
+            <button class="album-card" data-lightbox="./assets/images/music/album-02.webp" data-caption="A favorite album from the current rotation"><img src="./assets/images/music/album-02.webp" alt="Favorite album cover" /></button>
+            <button class="album-card" data-lightbox="./assets/images/music/album-03.webp" data-caption="A favorite album from the current rotation"><img src="./assets/images/music/album-03.webp" alt="Favorite album cover" /></button>
+            <button class="album-card" data-lightbox="./assets/images/music/album-04.webp" data-caption="A favorite album from the current rotation"><img src="./assets/images/music/album-04.webp" alt="Favorite album cover" /></button>
+            <button class="album-card" data-lightbox="./assets/images/music/album-05.webp" data-caption="A favorite album from the current rotation"><img src="./assets/images/music/album-05.webp" alt="Favorite album cover" /></button>
+            <button class="album-card" data-lightbox="./assets/images/music/album-06.webp" data-caption="A favorite album from the current rotation"><img src="./assets/images/music/album-06.webp" alt="Favorite album cover" /></button>
+          </div>
+        </section>
+      </article>
+
+      <article class="dating" data-page="dating">
+        <header><h2 class="h2 article-title">Dating</h2></header>
+        <section class="about-text">
+          <p>
+            I like relationships that begin gently. Friends first, usually — just talking, learning how the other person thinks, and seeing whether conversation feels easy and honest.
+            I value openness more than performance: there is no need to keep every guard up, and I would rather have a real conversation than spend weeks trying to look perfectly composed.
+          </p>
+          <p>
+            That does not mean every conversation has to be profound. Talking about daily life, a favorite singer, a ridiculous story, what we ate today, or where we want to go next can be just as good.
+            Life is not made only of grand meanings.
+          </p>
+        </section>
+
+        <section class="relationship-flow">
+          <div class="flow-step active"><span>01</span><div><h4>Talking</h4><p>Start as friends. Be curious, honest and comfortable enough to slowly show who we really are.</p></div></div>
+          <div class="flow-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <div class="flow-step"><span>02</span><div><h4>Dating / Seeing Each Other</h4><p>Spend more time together and understand each other beyond the chat window. No need to rush a label.</p></div></div>
+          <div class="flow-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <div class="flow-step"><span>03</span><div><h4>Exclusive</h4><p>If it feels right, I would probably gather the courage to ask whether we want to take the relationship one step further.</p></div></div>
+          <div class="flow-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <div class="flow-step"><span>04</span><div><h4>In a Relationship</h4><p>After exclusivity, I want the relationship to be exclusive in the straightforward sense of the word.</p></div></div>
+        </section>
+
+        <section class="dating-cards">
+          <div class="dating-card"><ion-icon name="chatbubbles-outline"></ion-icon><h4>How I communicate</h4><p>Both deep conversations and light everyday talk are welcome. I will try not to cross boundaries, but I do hope we can gradually speak honestly rather than staying carefully guarded forever.</p></div>
+          <div class="dating-card"><ion-icon name="people-outline"></ion-icon><h4>Before exclusivity</h4><p>During the friends / getting-to-know-each-other stage, I do not assume either person must stop meeting or dating other people.</p></div>
+          <div class="dating-card"><ion-icon name="heart-outline"></ion-icon><h4>After exclusivity</h4><p>Once we explicitly choose exclusivity, I would want that commitment to be mutual and clear.</p></div>
+          <div class="dating-card"><ion-icon name="navigate-outline"></ion-icon><h4>Distance</h4><p>I am not very comfortable with long-distance relationships. Sharing ordinary life in the same city matters to me.</p></div>
+        </section>
+
+        <section class="sunset-card">
+          <img src="./assets/images/gallery/zhengzhou-sunset.webp" alt="Sunset in Zhengzhou" />
+          <div class="sunset-overlay">
+            <p class="eyebrow">The ideal scene</p>
+            <h3>Two people waiting for the sunset together.</h3>
+            <p>Nothing spectacular has to happen. Staying until the light changes is enough.</p>
+          </div>
+        </section>
+      </article>
+
+      <article class="contact" data-page="contact">
+        <header><h2 class="h2 article-title">Contact</h2></header>
+        <section class="about-text contact-intro">
+          <p>I live between two cities in my mind: Nanjing is where university life is happening now; Zhengzhou is home, and probably where I will return in the long run.</p>
+        </section>
+
+        <section class="city-grid">
+          <div class="city-card">
+            <img src="./assets/images/maps/nanjing.webp" alt="Stylized map of Southeast University area in Nanjing" />
+            <div class="city-card-body"><span>NOW</span><h3>Nanjing, Jiangsu</h3><p>University, research, friends — most of my current everyday life happens here.</p></div>
+          </div>
+          <div class="city-card">
+            <img src="./assets/images/maps/zhengzhou.webp" alt="Stylized map of central Zhengzhou" />
+            <div class="city-card-body"><span>HOME</span><h3>Zhengzhou, Henan</h3><p>The city I am attached to, and the kind of ordinary life I still hope to come back to.</p></div>
+          </div>
+        </section>
+
+        <section class="say-hi">
+          <h3 class="h3">Say hi</h3>
+          <p>If you want to talk about AI, mechanics, photography, music, a random trip — or simply say hello — here are the easiest ways to reach me.</p>
+          <div class="contact-actions">
+            <a class="contact-button" href="mailto:1968764174@qq.com"><ion-icon name="mail-outline"></ion-icon><span>Email me</span></a>
+            <a class="contact-button" href="tel:+8613673387723"><ion-icon name="call-outline"></ion-icon><span>Call me</span></a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <div class="lightbox" data-lightbox-modal aria-hidden="true">
+    <button class="lightbox-close" data-lightbox-close aria-label="Close image viewer"><ion-icon name="close-outline"></ion-icon></button>
+    <div class="lightbox-backdrop" data-lightbox-backdrop></div>
+    <figure class="lightbox-content">
+      <img src="" alt="Expanded gallery image" data-lightbox-image />
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
