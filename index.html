@@ -10,13 +10,73 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <style>
+    /* Connections page — local additions */
+    .connection-note {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin: 28px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--jet);
+      border-radius: 16px;
+      background: var(--panel-2);
+      box-shadow: var(--shadow-2);
+    }
+
+    .connection-note-image {
+      overflow: hidden;
+      border-radius: 12px;
+      background: var(--onyx);
+    }
+
+    .connection-note-image img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .connection-note-text {
+      align-self: center;
+    }
+
+    .connection-note-text .eyebrow {
+      color: var(--accent);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      margin-bottom: 7px;
+    }
+
+    .connection-note-text h3 {
+      color: var(--white);
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .connection-note-text p:last-child {
+      color: var(--gray);
+      font-size: 13px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    @media (min-width: 768px) {
+      .connection-note {
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="./assets/images/avatar.png" alt="Digital avatar of Danyang Zhang" width="120" />
+          <img src="./assets/images/avatar.png" alt="Childhood photo" width="120" style="object-fit: cover; object-position: 25% center;" />
         </figure>
         <div class="info-content">
           <h1 class="name" title="Danyang Zhang">Danyang Zhang</h1>
@@ -69,7 +129,7 @@
           <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>The Self</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Dating</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Connections</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
       </nav>
@@ -106,7 +166,7 @@
               <div class="service-icon-box"><ion-icon name="flask-outline"></ion-icon></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">AI for Science</h4>
-                <p class="service-item-text">Working with DeepONet, PINNs and numerical simulation, hoping to connect mechanics with AI in ways that genuinely improve how we model physical systems.</p>
+                <p class="service-item-text">Exploring how machine learning can help us understand and simulate physical systems, especially in mechanics and fluid dynamics.</p>
               </div>
             </li>
             <li class="service-item">
@@ -264,42 +324,58 @@
         </section>
       </article>
 
-      <article class="dating" data-page="dating">
-        <header><h2 class="h2 article-title">Dating</h2></header>
+      <article class="connections" data-page="connections">
+        <header><h2 class="h2 article-title">Connections</h2></header>
+
         <section class="about-text">
           <p>
-            I like relationships that begin gently. Friends first, usually — just talking, learning how the other person thinks, and seeing whether conversation feels easy and honest.
-            I value openness more than performance: there is no need to keep every guard up, and I would rather have a real conversation than spend weeks trying to look perfectly composed.
+            I like meeting people, making friends, and getting to know them beyond first impressions.
+            I can be quiet at the beginning, but I genuinely enjoy conversations — sometimes about ideas,
+            values and the way we see the world, and sometimes simply about music, food, a funny story,
+            or how the day went.
           </p>
+
           <p>
-            That does not mean every conversation has to be profound. Talking about daily life, a favorite singer, a ridiculous story, what we ate today, or where we want to go next can be just as good.
-            Life is not made only of grand meanings.
+            I do not think every connection needs to become something in particular.
+            Some people become close friends, some remain brief but memorable encounters,
+            and occasionally someone may become a little more special.
+            I would rather let a connection find its own shape than decide too early what it is supposed to be.
+          </p>
+
+          <p>
+            If a connection does become romantic, I still prefer it to grow from friendship rather than from a checklist.
+            I like taking time, being honest with each other, and letting things become serious only when both people want that.
+            If we ever choose exclusivity, I want that choice to be clear and mutual.
+            And I would much rather share ordinary life in the same city than live mostly through a screen.
           </p>
         </section>
 
-        <section class="relationship-flow">
-          <div class="flow-step active"><span>01</span><div><h4>Talking</h4><p>Start as friends. Be curious, honest and comfortable enough to slowly show who we really are.</p></div></div>
-          <div class="flow-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
-          <div class="flow-step"><span>02</span><div><h4>Dating / Seeing Each Other</h4><p>Spend more time together and understand each other beyond the chat window. No need to rush a label.</p></div></div>
-          <div class="flow-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
-          <div class="flow-step"><span>03</span><div><h4>Exclusive</h4><p>If it feels right, I would probably gather the courage to ask whether we want to take the relationship one step further.</p></div></div>
-          <div class="flow-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
-          <div class="flow-step"><span>04</span><div><h4>In a Relationship</h4><p>After exclusivity, I want the relationship to be exclusive in the straightforward sense of the word.</p></div></div>
-        </section>
+        <section class="connection-note">
+          <div class="connection-note-image">
+            <img
+              src="./assets/images/gallery/love-wish.png"
+              alt="A film scene in which love is written as a future aspiration"
+            />
+          </div>
 
-        <section class="dating-cards">
-          <div class="dating-card"><ion-icon name="chatbubbles-outline"></ion-icon><h4>How I communicate</h4><p>Both deep conversations and light everyday talk are welcome. I will try not to cross boundaries, but I do hope we can gradually speak honestly rather than staying carefully guarded forever.</p></div>
-          <div class="dating-card"><ion-icon name="people-outline"></ion-icon><h4>Before exclusivity</h4><p>During the friends / getting-to-know-each-other stage, I do not assume either person must stop meeting or dating other people.</p></div>
-          <div class="dating-card"><ion-icon name="heart-outline"></ion-icon><h4>After exclusivity</h4><p>Once we explicitly choose exclusivity, I would want that commitment to be mutual and clear.</p></div>
-          <div class="dating-card"><ion-icon name="navigate-outline"></ion-icon><h4>Distance</h4><p>I am not very comfortable with long-distance relationships. Sharing ordinary life in the same city matters to me.</p></div>
+          <div class="connection-note-text">
+            <p class="eyebrow">A line I keep coming back to</p>
+            <h3>Love.</h3>
+            <p>
+              At the end of a film I like, a student's future aspiration is simply written as “Love.”
+              I like that answer. Not only romantic love, but a broader kind of care:
+              staying curious about people, treating them sincerely, and letting different kinds of
+              connections make life a little warmer.
+            </p>
+          </div>
         </section>
 
         <section class="sunset-card">
           <img src="./assets/images/gallery/zhengzhou-sunset.webp" alt="Sunset in Zhengzhou" />
           <div class="sunset-overlay">
-            <p class="eyebrow">The ideal scene</p>
-            <h3>Two people waiting for the sunset together.</h3>
-            <p>Nothing spectacular has to happen. Staying until the light changes is enough.</p>
+            <p class="eyebrow">And maybe, someday</p>
+            <h3>Someone to watch the sunset with.</h3>
+            <p>That sounds like a good evening to me.</p>
           </div>
         </section>
       </article>
